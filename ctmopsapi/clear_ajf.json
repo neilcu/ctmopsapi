@@ -1,0 +1,29 @@
+{
+  "ctmmaint": {
+    "Type": "SimpleFolder",
+    "ControlmServer": "ctmaws",
+    "OrderMethod": "Manual",
+    "clear_old_jobs_ajf": {
+      "Type": "Job:EmbeddedScript",
+      "Script": "#!/bin/csh\\n\\nshut_ctm\\nshut_ca\\nsleep 2\\nyes | clean_ajf\\nstart_ctm\\nstart_ca",
+      "SubApplication": "ctm_maintenance",
+      "FileName": "clearjobs.csh",
+      "CreatedBy": "emuser",
+      "RunAs": "ctms",
+      "Application": "controlm",
+      "When": {
+        "WeekDays": [
+          "NONE"
+        ],
+        "Months": [
+          "NONE"
+        ],
+        "MonthDays": [
+          "NONE"
+        ],
+        "SpecificDates": [],
+        "DaysRelation": "OR"
+      }
+    }
+  }
+}

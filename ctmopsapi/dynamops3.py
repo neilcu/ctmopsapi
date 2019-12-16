@@ -10,14 +10,14 @@ from matplotlib.cbook import unique
                 #Get the status of the jobs from specified search criteria and write to file
 def datarefresh ():
     jobfolder = 'ncu-ajfmanip'
-    os.system(('ctm run jobs:status::get -s "ctm=ctmaws&folder=%s" > /Users/ncullum/eclipse-workspace/ctmopsapi/myout.json')%(jobfolder)) 
+    os.system(('ctm run jobs:status::get -s "ctm=ctmaws&folder=%s" > /Users/ncullum/git/ctmopsapi/ctmopsapi/myout.json')%(jobfolder)) 
 
 datarefresh()
 
                 #Check whether there is already a data flow running, if not, rerun the flow
 def getinline ():
     
-    with open('/Users/ncullum/eclipse-workspace/ctmopsapi/myout.json') as json_file:
+    with open('/Users/ncullum/git/ctmopsapi/ctmopsapi/myout.json') as json_file:
         
         #mydata={}
         mydata = json.loads(json_file.read())

@@ -1,0 +1,2 @@
+ctm run resource::add ctmaws sem1 01
+ctm run resource::update ctmaws sem1 2
