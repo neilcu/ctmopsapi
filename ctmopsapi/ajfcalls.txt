@@ -1,0 +1,2 @@
+#Get jobs status in a folder
+ctm run jobs:status::get -s "ctm=ctmaws&folder=ncu-ajfmanip"

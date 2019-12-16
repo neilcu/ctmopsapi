@@ -1,0 +1,45 @@
+{
+"Defaults" : {
+        
+        "Application": "aws",
+        "SubApplication": "awsDynamicAjf",
+       
+        "ControlmServer" : "ctmaws"
+        },
+        
+        "ncu-ajfmanip" : {
+    "Type" : "SimpleFolder",
+    "OrderMethod" : "Manual",
+    
+      
+     "ncu-apiajf1" : {
+      "Type" : "Job:Command",
+      "Description" : "For manipulation in the AJF",
+      "Host" : "ncuctm",
+      "RunAs" : "ctms",
+      "Command" : "sleep 30",
+      "sem1": {
+        "Type": "Resource:Semaphore",
+        "Quantity": "15"
+                }
+        },
+       
+        
+     "ncu-apiajf2" : {
+      "Type" : "Job:Command",
+      "Description" : "For manipulation in the AJF",
+      "Host" : "ncuctm",
+      "RunAs" : "ctms",
+      "Command" : "sleep 10",
+      "sem1": {
+        "Type": "Resource:Semaphore",
+        "Quantity": "15"
+        }
+       },
+       
+     "elabflow": {
+	"Type":"Flow",
+	"Sequence":["ncu-apiajf1", "ncu-apiajf2"]
+		}		 
+      }
+}

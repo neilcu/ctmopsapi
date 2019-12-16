@@ -1,0 +1,48 @@
+{
+  "statuses": [
+    {
+      "jobId": "ctmaws:003yn",
+      "folderId": "ctmaws:",
+      "numberOfRuns": 1,
+      "name": "ncu-apiajf2",
+      "folder": "ncu-ajfmanip",
+      "type": "Command",
+      "status": "Ended OK",
+      "held": false,
+      "deleted": false,
+      "startTime": "20191216062848",
+      "endTime": "20191216062858",
+      "orderDate": "191215",
+      "ctm": "ctmaws",
+      "description": "For manipulation in the AJF",
+      "host": "ncuctm",
+      "application": "aws",
+      "subApplication": "awsDynamicAjf",
+      "outputURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/job/ctmaws:003yn/output",
+      "logURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/job/ctmaws:003yn/log"
+    },
+    {
+      "jobId": "ctmaws:003ym",
+      "folderId": "ctmaws:",
+      "numberOfRuns": 9,
+      "name": "ncu-apiajf1",
+      "folder": "ncu-ajfmanip",
+      "type": "Command",
+      "status": "Ended OK",
+      "held": false,
+      "deleted": false,
+      "startTime": "20191216064429",
+      "endTime": "20191216064459",
+      "orderDate": "191215",
+      "ctm": "ctmaws",
+      "description": "For manipulation in the AJF",
+      "host": "ncuctm",
+      "application": "aws",
+      "subApplication": "awsDynamicAjf",
+      "outputURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/job/ctmaws:003ym/output",
+      "logURI": "https://ec2-35-177-38-80.eu-west-2.compute.amazonaws.com:8443/automation-api/run/job/ctmaws:003ym/log"
+    }
+  ],
+  "returned": 2,
+  "total": 2
+}
